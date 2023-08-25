@@ -25,7 +25,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark" role="navigation">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/"><span></span></a>
+        <a class="navbar-brand" href="/home"><span></span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,7 +35,7 @@
         <ul class="nav navbar-nav me-auto">
 
           <li class="active">
-            <a href="/" title="home page">
+            <a href="/home" title="home page">
               <span class="fa fa-home" aria-hidden="true"></span>
               <span>{msg:home}</span>
             </a>
@@ -61,7 +61,12 @@
               <span>{msg:error}</span>
             </a>
           </li>
-
+          <li>
+            <a href="/" title="trigger a RuntimeException to see how it is handled">
+              <span class="fa exclamation-triangle" aria-hidden="true"></span>
+              <span>{msg:logout}</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -69,7 +74,7 @@
   <div class="container-fluid">
     <div class="container xd-container">
 
-      {#insert body}No body!{/} 
+      {#insert body}No body!{/}
 
     </div>
   </div>
