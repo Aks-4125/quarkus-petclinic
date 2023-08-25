@@ -51,7 +51,7 @@ public interface AppMessages {
     @Message("Specialties")
     String specialties();
 
-    @Message("Welcome")
+    @Message("Welcome to pet shop")
     String welcome();
 
     @Message("Birthdate")
