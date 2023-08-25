@@ -121,4 +121,16 @@ public interface SpanishAppMessages extends AppMessages {
     @Message("Visitas Anteriores")
     String previous_visits();
 
+    @Message("Iniciar sesión")
+    String login();
+
+    @Message("Correo electrónico")
+    String email();
+
+    @Message("Contraseña")
+    String password();
+
+    @Message("Cerrar sesión")
+    String logout();
+
 }
