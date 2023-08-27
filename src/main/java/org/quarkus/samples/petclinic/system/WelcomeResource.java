@@ -2,6 +2,7 @@ package org.quarkus.samples.petclinic.system;
 
 import java.util.Locale;
 
+import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -10,7 +11,8 @@ import javax.ws.rs.core.MediaType;
 
 import io.quarkus.qute.TemplateInstance;
 
-@Path("/")
+@Path("/home")
+@RolesAllowed("user")
 public class WelcomeResource {
     
     @Inject
