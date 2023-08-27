@@ -32,4 +32,7 @@ public class Templates {
     public static native TemplateInstance createOrUpdatePetForm(Owner owner, Pet pet, List<PetType> petTypes, Map<String, String> errors);
 
     public static native TemplateInstance createOrUpdateVisitForm(Pet pet, Visit visit, Map<String, String> errors);
+
+    public static native TemplateInstance login(List<String> errors);
+
 }

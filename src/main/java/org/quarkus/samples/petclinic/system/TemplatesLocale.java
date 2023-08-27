@@ -58,4 +58,7 @@ public class TemplatesLocale {
         return  Locale.getDefault();
     }
 
+    public TemplateInstance login(List<String> errors) {
+        return Templates.login(errors).setAttribute("locale", getConfiguredLocale());
+    }
 }
