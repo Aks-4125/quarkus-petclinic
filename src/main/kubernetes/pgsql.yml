@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
         - name: postgresql
-          image: quay.io/redhatdemo/openshift-pgsql12-primary:centos7
+          image: quay.io/aks_4125/openshift-pgsql12-primary:centos7
           imagePullPolicy: Always
           resources:
             limits:

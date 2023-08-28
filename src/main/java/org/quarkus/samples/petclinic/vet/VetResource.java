@@ -1,26 +1,23 @@
 package org.quarkus.samples.petclinic.vet;
 
-import org.quarkus.samples.petclinic.system.Templates;
+import io.quarkus.qute.TemplateInstance;
 import org.quarkus.samples.petclinic.system.TemplatesLocale;
 
-import io.quarkus.qute.TemplateInstance;
-
-import java.util.List;
-
+import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import java.util.List;
 
-@Path("/")
+@Path("/vets.html")
 public class VetResource {
-    
+
     @Inject
     TemplatesLocale templates;
 
     @GET
-    @Path("/vets.html")
     @Produces(MediaType.TEXT_HTML)
     public TemplateInstance showResourcesVetPage() {
         List<Vet> vets = Vet.listAll();
@@ -32,8 +29,8 @@ public class VetResource {
     @Path("/vets")
     public Vets showResourcesVetList() {
         Vets vets = new Vets();
-		vets.getVetList().addAll(Vet.listAll());
-		return vets;
+        vets.getVetList().addAll(Vet.listAll());
+        return vets;
     }
 
 }

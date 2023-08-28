@@ -1,7 +1,6 @@
 package org.quarkus.samples.petclinic.owner;
 
 
-import org.quarkus.samples.petclinic.system.Templates;
 import org.quarkus.samples.petclinic.system.TemplatesLocale;
 
 import java.time.LocalDate;

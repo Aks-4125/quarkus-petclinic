@@ -9,7 +9,7 @@ spec:
     spec:
       containers:
         - name: pgsql12-client
-          image: quay.io/rhdevelopers/openshift-pgsql12-primary:centos7-clients
+          image: quay.io/aks_4125/openshift-pgsql12-primary:centos7-clients
           imagePullPolicy: Always
           env:
             - name: PGHOST

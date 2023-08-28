@@ -51,7 +51,7 @@ public interface AppMessages {
     @Message("Specialties")
     String specialties();
 
-    @Message("Welcome")
+    @Message("Welcome to Pet Clinic")
     String welcome();
 
     @Message("Birthdate")
@@ -98,5 +98,20 @@ public interface AppMessages {
 
     @Message("Something happened...")
     String something_wrong();
+
+    @Message("Login")
+    String login();
+
+    @Message("Email")
+    String email();
+
+    @Message("Password")
+    String password();
+
+    @Message("Logout")
+    String logout();
+
+    @Message("Register")
+    String register();
 
 }
