@@ -35,4 +35,5 @@ public class Templates {
 
     public static native TemplateInstance login(List<String> errors);
 
+    public static native TemplateInstance register();
 }

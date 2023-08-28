@@ -1,6 +1,5 @@
 package org.quarkus.samples.petclinic.owner;
 
-import org.quarkus.samples.petclinic.system.Templates;
 import org.quarkus.samples.petclinic.system.TemplatesLocale;
 import org.quarkus.samples.petclinic.visit.Visit;
 
@@ -8,7 +7,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.validation.ConstraintViolation;
@@ -24,7 +22,6 @@ import javax.ws.rs.core.MediaType;
 import io.quarkus.qute.TemplateInstance;
 
 @Path("/owners")
-@RolesAllowed("user")
 public class VisitResource {
     
     @Inject

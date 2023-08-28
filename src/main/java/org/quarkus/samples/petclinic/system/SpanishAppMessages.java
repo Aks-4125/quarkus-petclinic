@@ -133,4 +133,7 @@ public interface SpanishAppMessages extends AppMessages {
     @Message("Cerrar sesión")
     String logout();
 
+    @Message("registro")
+    String register();
+
 }

@@ -1,18 +1,16 @@
-package org.quarkus.samples.petclinic.system;
+package org.quarkus.samples.petclinic.register;
 
-import java.util.Locale;
+import io.quarkus.qute.TemplateInstance;
+import org.quarkus.samples.petclinic.system.TemplatesLocale;
 
-import javax.annotation.security.RolesAllowed;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import io.quarkus.qute.TemplateInstance;
-
-@Path("/home")
-public class WelcomeResource {
+@Path("/register")
+public class RegisterResource {
     
     @Inject
     TemplatesLocale templates;
@@ -20,7 +18,7 @@ public class WelcomeResource {
     @GET
     @Produces(MediaType.TEXT_HTML)
     public TemplateInstance get() {
-        return templates.welcome();
+        return templates.register();
     }
 
 }

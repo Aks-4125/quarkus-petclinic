@@ -31,7 +31,7 @@ public class LoginResource {
     }
 
     @POST
-    @Produces(MediaType.TEXT_HTML)
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Transactional
     /**
      * Process the findOwners form
